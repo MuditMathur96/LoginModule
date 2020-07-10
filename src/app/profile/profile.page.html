@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<br><br>
+  <ion-grid>
+   
+    <ion-row>
+      <ion-col>
+        <ion-button (click)='logout()'>Logout</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ng-template #name [ngIf]='user'>
+
+    <ion-card>
+      <ion-card-header>
+       <img src={{user.avatar}}>
+        <ion-card-subtitle>{{user.first_name+' '+user.last_name}}</ion-card-subtitle>
+        <ion-card-title>{{user.email}}</ion-card-title>
+      </ion-card-header>
+      
+      </ion-card>
+
+  </ng-template>
+   
+
+  
+  
+   
+   
+  
+</ion-content>
+<marquee>This is just an ad</marquee>
