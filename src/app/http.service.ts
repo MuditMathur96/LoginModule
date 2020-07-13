@@ -9,7 +9,7 @@ export class HttpService {
   constructor(private http:HttpClient) { }
 
   logIn(email:string,password:string){
-    return this.http.post("https://reqres.in/api/login",{
+    return this.http.post("https://reqres.in/api/register",{
       email:email,
       password:password
       }

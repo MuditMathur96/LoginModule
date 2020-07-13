@@ -75,7 +75,7 @@ export class LoginPage implements OnInit {
         loading.dismiss();
         this.userData = {
           token:data['token'],
-          userId:1 
+          userId:data['id'] 
         };
         console.log(this.userData)
         localStorage.setItem('user',JSON.stringify(this.userData));
